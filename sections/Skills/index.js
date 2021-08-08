@@ -2,6 +2,7 @@ import Card from '../../components/Card';
 import SubTitle from '../../components/SubTitle';
 import styles from './index.module.scss';
 import { skills } from './configs';
+import Flower from '../../assets/flower.svg';
 
 const Skills = () => {
   return (
@@ -15,11 +16,16 @@ const Skills = () => {
             title={title}
             centered
             text={
-              <ul>
-                {items.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
+              <>
+                <div className={styles.dividerIcon}>
+                  <Flower />
+                </div>
+                <ul>
+                  {items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </>
             }
           />
         ))}

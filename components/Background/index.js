@@ -1,7 +1,7 @@
 import Succulent from '../../assets/Succulent.svg';
 import styles from './index.module.scss';
 
-const pieceMaxAmount = 10;
+const pieceMaxAmount = 12;
 
 const Background = () => {
   const getSucculents = (num) => {

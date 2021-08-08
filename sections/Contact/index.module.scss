@@ -1,0 +1,40 @@
+.content {
+  background-color: rgba(256, 256, 256, 0.7);
+  padding: 16px 0 24px;
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.5;
+}
+
+.inTouch {
+  color: #456c4b;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.mail {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  &:hover {
+    transform: rotate(-3deg) scale(1.2);
+  }
+}
+
+.socialIcon {
+  margin: 0 16px;
+  width: 1em;
+  height: 1em;
+}
+
+.socialItem {
+  font-size: 1em;
+}

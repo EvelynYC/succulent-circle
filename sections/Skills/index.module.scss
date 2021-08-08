@@ -4,6 +4,12 @@
   justify-content: space-between;
 }
 
+.dividerIcon {
+  width: 12px;
+  height: 12px;
+  margin: 0 auto 24px;
+}
+
 @media (min-width: 768px) {
   /* iPad */
   .card {

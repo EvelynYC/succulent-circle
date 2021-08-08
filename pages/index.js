@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import About from '../sections/About';
 import Skills from '../sections/Skills';
 import Portfolio from '../sections/Portfolio';
+import Contact from '../sections/Contact';
 import styles from '../styles/home.module.scss';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Portfolio />
         <Skills />
+        <Contact />
       </div>
       <Footer />
     </div>

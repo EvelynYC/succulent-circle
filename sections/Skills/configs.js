@@ -13,6 +13,7 @@ export const skills = [
       'Lodash',
       'Ramda',
       'Jest(Enzyme)',
+      'Next.js',
     ],
   },
   {

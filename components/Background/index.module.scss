@@ -1,4 +1,4 @@
-$pieceMaxAmount: 10;
+$pieceMaxAmount: 12;
 
 .container {
   z-index: -1;
@@ -11,22 +11,16 @@ $pieceMaxAmount: 10;
 }
 
 @mixin randomPositionSize($width) {
-  top: (random(60) + 20) * 1%;
+  top: (random(70) + 10) * 1%;
   left: random(80) * 1%;
   width: $width + px;
   height: $width + px;
 }
 
 @for $i from 1 through $pieceMaxAmount + 1 {
-  @if $i <6 {
-    $width: (random() * 2 + 1) * 40;
-    .piece:nth-child(#{$i}) {
-      @include randomPositionSize($width);
-    }
-  } @else {
-    .piece:nth-child(#{$i}) {
-      display: none;
-    }
+  $width: (random() * 2 + 1) * 40;
+  .piece:nth-child(#{$i}) {
+    @include randomPositionSize($width);
   }
 }
 
