@@ -64,7 +64,7 @@ Card.propTypes = {
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   centered: PropTypes.bool,
   imageOptions: PropTypes.shape({
-    src: PropTypes.string,
+    src: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
     alt: PropTypes.string,
     layout: PropTypes.oneOf(['vertical', 'horizontal']),
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),

@@ -17,7 +17,16 @@ const Portfolio = () => {
         ({ title, description, imageSrc, techTags, link, githubLink }) => (
           <Card
             key={title}
-            title={title}
+            title={
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.title}
+              >
+                {title}
+              </a>
+            }
             text={description}
             imageOptions={{
               src: imageSrc,

@@ -8,7 +8,7 @@ const Contact = () => {
     <div className={styles.container} id="contact">
       <SubTitle title="Contact" />
       <div className={styles.content}>
-        <p className={styles.inTouch}>Let&apos;s get in touch ! ❤ </p>
+        <p className={styles.inTouch}>Let&apos;s get in touch ! ♥ </p>
         <p>
           {`歡迎你隨時使用 email 與我聯繫 `}
           <a

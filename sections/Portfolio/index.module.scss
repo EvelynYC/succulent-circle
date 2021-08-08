@@ -1,8 +1,16 @@
+.title {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: #456c4b;
+  }
+}
 .icon {
   width: 20px;
   height: 20px;
   margin-left: 20px;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
   &:hover {
     transform: scale(1.3);
   }
