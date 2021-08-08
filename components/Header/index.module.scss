@@ -1,0 +1,23 @@
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.menuItem {
+  margin: 6px 16px;
+  letter-spacing: 0.3em;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: #125a0d;
+  }
+}

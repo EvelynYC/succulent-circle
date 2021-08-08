@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  /* iPad */
+  .content {
+    width: 60%;
+  }
+}

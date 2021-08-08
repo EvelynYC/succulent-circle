@@ -1,0 +1,42 @@
+$pieceMaxAmount: 10;
+
+.container {
+  z-index: -1;
+  overflow: hidden;
+}
+
+.piece {
+  position: absolute;
+  z-index: -1;
+}
+
+@mixin randomPositionSize($width) {
+  top: (random(60) + 20) * 1%;
+  left: random(80) * 1%;
+  width: $width + px;
+  height: $width + px;
+}
+
+@for $i from 1 through $pieceMaxAmount + 1 {
+  @if $i <6 {
+    $width: (random() * 2 + 1) * 40;
+    .piece:nth-child(#{$i}) {
+      @include randomPositionSize($width);
+    }
+  } @else {
+    .piece:nth-child(#{$i}) {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  /* iPad */
+  @for $i from 1 through $pieceMaxAmount + 1 {
+    $width: (random() * 2 + 1) * 40;
+    .piece:nth-child(#{$i}) {
+      display: block;
+      @include randomPositionSize($width);
+    }
+  }
+}
