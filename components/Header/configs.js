@@ -1,9 +1,5 @@
 export const menuItems = [
   {
-    path: 'home',
-    label: 'Home',
-  },
-  {
     path: 'about',
     label: 'About',
   },
@@ -14,6 +10,10 @@ export const menuItems = [
   {
     path: 'skills',
     label: 'Skills',
+  },
+  {
+    path: 'articles',
+    label: 'Articles',
   },
   {
     path: 'contact',

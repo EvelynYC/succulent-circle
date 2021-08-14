@@ -1,60 +1,55 @@
 .logoWrapper {
   margin: 16px 0;
-  transition: all 1.5s ease-in-out;
-}
-
-.menu {
-  text-transform: uppercase;
-  transition: all 1.5s ease-in-out;
-}
-
-.centeredLogoWrapper {
   display: flex;
   justify-content: center;
 }
 
-.centeredMenu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.centeredLogo {
+.logo {
   width: 232px;
   height: 80px;
 }
 
-.fixedContainer {
-  background-color: white;
-  z-index: 5;
+.fixedHeader {
   position: fixed;
   top: 0;
-  left: 0;
+  z-index: 10;
+  right: 0;
+  padding: 40px 0;
+  background-color: white;
+  height: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.fixedContainer {
+  background-color: transparent;
+  z-index: 11;
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 60px;
-
-  .fixedLogoWrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
+  display: none;
+  &.showFixedContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
+}
 
-  .fixedLogo {
-    display: none;
-  }
-
-  .fixedMenu {
-    position: absolute;
-    top: 14px;
-    right: 0;
-    width: 100%;
-    text-transform: uppercase;
+.menu {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  &.fixedMenu {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    width: 100vw;
+    height: 65%;
     .menuItem {
-      margin: 6px 5px;
-      font-size: 0.6rem;
+      text-align: center;
     }
   }
 }
@@ -62,10 +57,25 @@
 .menuItem {
   margin: 6px 16px;
   letter-spacing: 0.3em;
-  font-size: 0.9rem;
-  transition: all 0.2s ease-in-out;
+  font-size: 0.8rem;
   &:hover {
     color: #456c4b;
+  }
+}
+
+.menuIcon {
+  display: none;
+  margin: 16px;
+  cursor: pointer;
+  z-index: 12;
+  &.showMenuIcon {
+    display: block;
+  }
+}
+
+@media (min-width: 365px) {
+  .menuItem {
+    font-size: 0.9rem;
   }
 }
 
@@ -73,24 +83,10 @@
   /* iPad */
 
   .fixedContainer {
-    height: 100px;
+    display: none;
 
-    .fixedLogo {
-      display: block;
-      width: 232px;
-      height: 80px;
-    }
-
-    .fixedMenu {
-      justify-content: flex-end;
-    }
-
-    .fixedMenu {
-      top: 28px;
-      .menuItem {
-        margin: 6px 16px;
-        font-size: 0.9rem;
-      }
+    &.showFixedContainer {
+      display: none;
     }
   }
 }

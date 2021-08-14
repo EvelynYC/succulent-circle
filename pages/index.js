@@ -6,6 +6,7 @@ import Skills from '../sections/Skills';
 import Portfolio from '../sections/Portfolio';
 import Contact from '../sections/Contact';
 import styles from '../styles/home.module.scss';
+import Articles from '../sections/Articles';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <Portfolio />
         <Skills />
+        <Articles />
         <Contact />
       </div>
       <Footer />
