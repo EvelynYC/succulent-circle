@@ -1,4 +1,4 @@
-## Project Info
+## Introduction
 
 This is my personal website for sharing my portfolio and looking for connection of web development community.
 
