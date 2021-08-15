@@ -1,13 +1,11 @@
-import Card from '../../components/Card';
-import Tag from '../../components/Tag';
+import Card from '@components/Card';
+import Tag from '@components/Tag';
 import styles from './index.module.scss';
-import SubTitle from '../../components/SubTitle';
+import SubTitle from '@components/SubTitle';
 import { projects } from './configs';
-import LinkIcon from '../../assets/link.svg';
-import { GithubIcon } from '../../assets/socialIcons';
+import LinkIcon from '@assets/link.svg';
+import { GithubIcon } from '@assets/socialIcons';
 import cx from 'classnames';
-
-const iconColor = '#456c4b';
 
 const Portfolio = () => {
   return (
@@ -32,8 +30,8 @@ const Portfolio = () => {
               src: imageSrc,
               alt: 'Image of Conversa project',
               layout: 'horizontal',
-              width: 400,
-              height: 400,
+              width: 320,
+              height: 320,
             }}
             extra={
               <>

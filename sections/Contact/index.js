@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
-import SubTitle from '../../components/SubTitle';
-import { contacts } from '../../configs/contacts';
+import SubTitle from '@components/SubTitle';
+import { contacts } from '@configs/contacts';
 
 const iconColor = '#456c4b';
 const Contact = () => {

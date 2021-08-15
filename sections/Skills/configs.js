@@ -1,7 +1,15 @@
 export const skills = [
   {
     title: 'Front-End & Networking',
-    items: ['HTML', 'CSS', 'SASS/SCSS', 'JavaScript', 'RESTful API', 'AJAX'],
+    items: [
+      'HTML',
+      'CSS',
+      'SASS/SCSS',
+      'JavaScript',
+      'TypeScript',
+      'RESTful API',
+      'AJAX',
+    ],
   },
   {
     title: 'Frameworks & Libraries',

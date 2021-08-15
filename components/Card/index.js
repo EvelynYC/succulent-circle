@@ -46,9 +46,7 @@ const Card = (props) => {
               {title}
             </div>
           )}
-          <div
-            className={centered ? cx(styles.text, styles.center) : styles.text}
-          >
+          <div className={cx(styles.text, centered && styles.center)}>
             <div>{text}</div>
           </div>
           {footer && <div className={styles.footer}>{footer}</div>}

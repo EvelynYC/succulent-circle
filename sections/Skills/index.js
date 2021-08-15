@@ -1,8 +1,8 @@
-import Card from '../../components/Card';
-import SubTitle from '../../components/SubTitle';
+import Card from '@components/Card';
+import SubTitle from '@components/SubTitle';
 import styles from './index.module.scss';
 import { skills } from './configs';
-import Flower from '../../assets/flower.svg';
+import Flower from '@assets/flower.svg';
 
 const Skills = () => {
   return (

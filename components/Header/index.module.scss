@@ -1,3 +1,7 @@
+.header {
+  margin-bottom: 48px;
+}
+
 .logoWrapper {
   margin: 16px 0;
   display: flex;
@@ -81,12 +85,15 @@
 
 @media (min-width: 768px) {
   /* iPad */
-
   .fixedContainer {
     display: none;
 
     &.showFixedContainer {
       display: none;
     }
+  }
+
+  .menuItem {
+    font-size: 1rem;
   }
 }

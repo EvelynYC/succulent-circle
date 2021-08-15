@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import Logo from '../../assets/Logo.svg';
+import Logo from '@assets/Logo.svg';
 import styles from './index.module.scss';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { menuItems } from './configs';
@@ -39,7 +39,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={isDynamicMenuShow ? styles.fixedHeader : null}>
+    <header className={isDynamicMenuShow ? styles.fixedHeader : styles.header}>
       <div
         className={styles.logoWrapper}
         onClick={() => {

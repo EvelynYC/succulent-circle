@@ -1,4 +1,4 @@
-import icon from '../../assets/portfolio/conversa.png';
+import icon from '@assets/portfolio/conversa.png';
 
 export const projects = [
   {

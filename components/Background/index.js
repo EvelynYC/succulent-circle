@@ -1,4 +1,4 @@
-import Succulent from '../../assets/Succulent.svg';
+import Succulent from '@assets/Succulent.svg';
 import styles from './index.module.scss';
 
 const pieceMaxAmount = 12;
