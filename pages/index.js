@@ -18,9 +18,10 @@ export default function Home() {
         <meta
           name="description"
           content="I am Aslyn. I am a front-end web engineer. 我是莊語純，是一個網頁前端工程師。"
-        ></meta>
-        <meta name="keywords" content="Aslyn,莊語純,Aislyn,語純"></meta>
-        <meta httpEquiv="Content-Language" content="en,zh-TW"></meta>
+        />
+        <meta name="keywords" content="Aslyn,莊語純,Aislyn,語純" />
+        <meta httpEquiv="Content-Language" content="en,zh-TW" />
+        <meta charset="UTF-8" />
       </Head>
       <div className={styles.container} id="home">
         <Background />
