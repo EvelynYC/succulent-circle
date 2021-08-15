@@ -6,10 +6,10 @@ const Articles = () => {
       <SubTitle title="Articles" />
       <div
         style={{
-          width: '30%',
-          border: '1px #aaa dashed',
+          width: '200px',
+          border: '1px rgba(170, 170, 170, 0.4) dashed',
           margin: '0 auto',
-          padding: '18px 0',
+          padding: '12px 0',
         }}
       >
         <p>= 施工中 =</p>

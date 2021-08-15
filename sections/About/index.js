@@ -15,11 +15,15 @@ const About = () => {
           React。
         </p>
         <div className={styles.socialIcons}>
-          {contacts.map(({ name, getIcon, link }) => (
+          {contacts.map(({ name, getIcon, link, sendMail }) => (
             <div key={name} className={styles.socialIcon}>
-              <a href={link} target="_blank" rel="noreferrer">
-                {getIcon(iconColor)}
-              </a>
+              {typeof sendMail === 'function' ? (
+                <a onClick={sendMail}>{getIcon(iconColor)}</a>
+              ) : (
+                <a href={link} target="_blank" rel="noreferrer">
+                  {getIcon(iconColor)}
+                </a>
+              )}
             </div>
           ))}
         </div>

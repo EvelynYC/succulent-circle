@@ -1,8 +1,10 @@
 .container {
-  margin-bottom: 24px;
+  padding: 32px 0;
   width: 100%;
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .textWrapper {

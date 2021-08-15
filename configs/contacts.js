@@ -10,6 +10,7 @@ export const contacts = [
   {
     name: 'Email',
     getIcon: (fill) => <EmailIcon fill={fill} />,
+    sendMail: () => window.open('mailto:chuang.yuchun@gmail.com'),
   },
   {
     name: 'Linkedin',
