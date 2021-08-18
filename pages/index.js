@@ -7,7 +7,6 @@ import Skills from '@sections/Skills';
 import Portfolio from '@sections/Portfolio';
 import Contact from '@sections/Contact';
 import Articles from '@sections/Articles';
-import LangSwitch from '@components/LangSwitch';
 import styles from '../styles/home.module.scss';
 
 export default function Home() {
