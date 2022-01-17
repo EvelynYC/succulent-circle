@@ -1,6 +1,9 @@
 import SubTitle from '@components/SubTitle';
+import { useTranslation } from 'next-i18next';
 
 const Articles = () => {
+  const { t } = useTranslation('common');
+
   return (
     <div id="articles" style={{ textAlign: 'center', margin: '20px 0' }}>
       <SubTitle title="Articles" />
@@ -12,8 +15,8 @@ const Articles = () => {
           padding: '12px 0',
         }}
       >
-        <p>= 施工中 =</p>
-        <p>敬請期待</p>
+        <p>{t('inProgress')}</p>
+        <p>{t('pleaseWait')}</p>
       </div>
     </div>
   );

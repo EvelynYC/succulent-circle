@@ -1,10 +1,10 @@
 import icon from '@assets/portfolio/conversa.png';
+import icon2 from '@assets/portfolio/hido.png';
 
 export const projects = [
   {
-    title: 'Conversa',
-    description:
-      '是一個簡易的簡報編輯器，使你能輕鬆在你的簡報中加入意見調查及即時圖表，並能即時投影調查結果，與聽眾進行互動。',
+    title: 'conversa',
+    description: 'conversaDescription',
     imageSrc: icon,
     techTags: [
       'React',
@@ -17,5 +17,13 @@ export const projects = [
     ],
     link: 'https://conversa-a419b.firebaseapp.com',
     githubLink: 'https://github.com/AislynYC/conversa',
+  },
+  {
+    title: 'hido',
+    description: 'hidoDescription',
+    imageSrc: icon2,
+    techTags: ['React', 'RWD', 'SPA', 'Gatsby', 'CSS module'],
+    link: 'https://hido.tw/',
+    githubLink: null,
   },
 ];

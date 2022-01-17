@@ -11,6 +11,11 @@
   position: relative;
 }
 
+.contentHorizontal {
+  max-width: 800px;
+  flex-shrink: 3;
+}
+
 .extra {
   position: absolute;
   top: 0;
@@ -28,7 +33,7 @@
 .title {
   font-weight: 600;
   font-size: 1.1rem;
-  margin: 0 0 8px;
+  margin: 14px 0 8px;
 }
 
 .text {
@@ -63,5 +68,6 @@
 
   .imageWrapperHorizontal {
     margin-right: 24px;
+    flex-basis: 320px;
   }
 }

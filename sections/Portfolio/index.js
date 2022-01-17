@@ -6,8 +6,11 @@ import { projects } from './configs';
 import LinkIcon from '@assets/link.svg';
 import { GithubIcon } from '@assets/socialIcons';
 import cx from 'classnames';
+import { useTranslation } from 'next-i18next';
 
 const Portfolio = () => {
+  const {t} =useTranslation('common')
+
   return (
     <div className={styles.container} id="portfolio">
       <SubTitle title="Portfolio" />
@@ -22,13 +25,13 @@ const Portfolio = () => {
                 rel="noreferrer"
                 className={styles.title}
               >
-                {title}
+                {t(title)}
               </a>
             }
-            text={description}
+            text={t(description)}
             imageOptions={{
               src: imageSrc,
-              alt: 'Image of Conversa project',
+              alt: 'Image of project',
               layout: 'horizontal',
               width: 320,
               height: 320,
@@ -38,12 +41,12 @@ const Portfolio = () => {
                 <a href={link} target="_blank" rel="noreferrer">
                   <LinkIcon className={styles.icon} fill="#6897ba" />
                 </a>
-                <a href={githubLink} target="_blank" rel="noreferrer">
+               {githubLink && <a href={githubLink} target="_blank" rel="noreferrer">
                   <GithubIcon
                     className={cx(styles.icon, styles.github)}
                     fill="#f7dc97"
                   />
-                </a>
+                </a>}
               </>
             }
             footer={

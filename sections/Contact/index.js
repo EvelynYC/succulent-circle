@@ -1,16 +1,19 @@
 import styles from './index.module.scss';
 import SubTitle from '@components/SubTitle';
 import { contacts } from '@configs/contacts';
+import { useTranslation } from 'next-i18next';
 
 const iconColor = '#456c4b';
 const Contact = () => {
+  const { t } = useTranslation('common');
+
   return (
     <div className={styles.container} id="contact">
       <SubTitle title="Contact" />
       <div className={styles.content}>
         <p className={styles.inTouch}>Let&apos;s get in touch ! ♥ </p>
         <p>
-          {`歡迎你隨時使用 email 與我聯繫 `}
+          {`${t('emailContact')} `}
           <a
             onClick={() => window.open('mailto:chuang.yuchun@gmail.com')}
             className={styles.mail}
@@ -18,7 +21,7 @@ const Contact = () => {
             chuang.yuchun@gmail.com
           </a>
         </p>
-        <p>你也可以在這些地方找到我：</p>
+        <p>{t('otherContact')}</p>
         <ul>
           {contacts.map(
             ({ name, getIcon, link }, index) =>
