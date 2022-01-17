@@ -1,4 +1,5 @@
 import icon from '@assets/portfolio/conversa.png';
+import icon2 from '@assets/portfolio/hido.png';
 
 export const projects = [
   {
@@ -17,5 +18,20 @@ export const projects = [
     ],
     link: 'https://conversa-a419b.firebaseapp.com',
     githubLink: 'https://github.com/AislynYC/conversa',
+  },
+  {
+    title: '堂爺爺文旦園',
+    description:
+      '一頁式的文旦農園網站，利用 Gatsby 快速建立靜態網站，並獲得良好的 SEO。',
+    imageSrc: icon2,
+    techTags: [
+      'React',
+      'RWD',
+      'SPA',
+      'Gatsby',
+      'CSS module',
+    ],
+    link: 'https://hido.tw/',
+    githubLink: null,
   },
 ];

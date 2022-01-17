@@ -38,12 +38,12 @@ const Portfolio = () => {
                 <a href={link} target="_blank" rel="noreferrer">
                   <LinkIcon className={styles.icon} fill="#6897ba" />
                 </a>
-                <a href={githubLink} target="_blank" rel="noreferrer">
+               {githubLink && <a href={githubLink} target="_blank" rel="noreferrer">
                   <GithubIcon
                     className={cx(styles.icon, styles.github)}
                     fill="#f7dc97"
                   />
-                </a>
+                </a>}
               </>
             }
             footer={
