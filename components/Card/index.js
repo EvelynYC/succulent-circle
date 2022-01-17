@@ -35,7 +35,12 @@ const Card = (props) => {
             />
           </div>
         )}
-        <div className={styles.content}>
+        <div
+          className={cx(
+            styles.content,
+            layout === 'horizontal' && styles.contentHorizontal
+          )}
+        >
           {extra && <div className={styles.extra}>{extra}</div>}
           {title && (
             <div

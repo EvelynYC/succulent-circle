@@ -10,9 +10,18 @@
   margin: 0 auto;
 }
 
+.toolBar {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media (min-width: 768px) {
   /* iPad */
   .content {
     width: 70%;
+  }
+
+  .toolBar {
+    width: 80%;
   }
 }
