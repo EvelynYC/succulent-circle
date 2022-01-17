@@ -5,15 +5,15 @@ import { useTranslation } from 'next-i18next';
 
 const iconColor = '#456c4b';
 const Contact = () => {
-  const {t}=useTranslation('common');
-  
+  const { t } = useTranslation('common');
+
   return (
     <div className={styles.container} id="contact">
       <SubTitle title="Contact" />
       <div className={styles.content}>
         <p className={styles.inTouch}>Let&apos;s get in touch ! ♥ </p>
         <p>
-          {`${t('email-contact')} `}
+          {`${t('emailContact')} `}
           <a
             onClick={() => window.open('mailto:chuang.yuchun@gmail.com')}
             className={styles.mail}
@@ -21,7 +21,7 @@ const Contact = () => {
             chuang.yuchun@gmail.com
           </a>
         </p>
-        <p>{t('other-contact')}</p>
+        <p>{t('otherContact')}</p>
         <ul>
           {contacts.map(
             ({ name, getIcon, link }, index) =>

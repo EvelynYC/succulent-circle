@@ -1,10 +1,11 @@
 {
-   "about":" Hi！我是語純！是一個網頁前端工程師。著迷於網頁這樣一個浩瀚無邊的畫布，以及豐富多彩的技術顏料，喜歡製作能與螢幕另一端的使用者互動對話的網站，目前正在深耕的框架是 React。",
-   "conversa":"Conversa",
-   "conversa-description":"是一個簡易的簡報編輯器，使你能輕鬆在你的簡報中加入意見調查及即時圖表，並能即時投影調查結果，與聽眾進行互動。",
-   "hido":"堂爺爺文旦園",
-   "hido-description":"一頁式的文旦農園網站，利用 Gatsby 快速建立靜態網站，並獲得良好的 SEO。",
-   "email-contact":"歡迎你隨時使用 email 與我聯繫",
-   "other-contact":"你也可以在這些地方找到我："
-  }
-  
+  "about": " Hi！我是語純！是一個網頁前端工程師。著迷於網頁這樣一個浩瀚無邊的畫布，以及豐富多彩的技術顏料，喜歡製作能與螢幕另一端的使用者互動對話的網站，目前正在深耕的框架是 React。",
+  "conversa": "Conversa",
+  "conversaDescription": "是一個簡易的簡報編輯器，使你能輕鬆在你的簡報中加入意見調查及即時圖表，並能即時投影調查結果，與聽眾進行互動。",
+  "hido": "堂爺爺文旦園",
+  "hidoDescription": "一頁式的文旦農園網站，利用 Gatsby 快速建立靜態網站，並獲得良好的 SEO。",
+  "emailContact": "歡迎你隨時使用 email 與我聯繫",
+  "otherContact": "你也可以在這些地方找到我：",
+  "inProgress": "= 施工中 =",
+  "pleaseWait": "敬請期待"
+}

@@ -4,7 +4,7 @@ import icon2 from '@assets/portfolio/hido.png';
 export const projects = [
   {
     title: 'conversa',
-    description:'conversa-description',
+    description: 'conversaDescription',
     imageSrc: icon,
     techTags: [
       'React',
@@ -20,15 +20,9 @@ export const projects = [
   },
   {
     title: 'hido',
-    description:'hido-description',
+    description: 'hidoDescription',
     imageSrc: icon2,
-    techTags: [
-      'React',
-      'RWD',
-      'SPA',
-      'Gatsby',
-      'CSS module',
-    ],
+    techTags: ['React', 'RWD', 'SPA', 'Gatsby', 'CSS module'],
     link: 'https://hido.tw/',
     githubLink: null,
   },

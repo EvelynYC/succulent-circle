@@ -5,6 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { menuItems } from './configs';
 import cx from 'classnames';
 import MenuIcon from '../MenuIcon';
+import LangSwitch from '../LangSwitch';
 
 const Header = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -61,6 +62,11 @@ const Header = () => {
             {label}
           </AnchorLink>
         ))}
+        {isDynamicMenuShow && (
+          <div className={styles.langTool}>
+            <LangSwitch />
+          </div>
+        )}
       </nav>
       <div
         className={cx(

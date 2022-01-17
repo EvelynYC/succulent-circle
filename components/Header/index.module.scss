@@ -77,6 +77,11 @@
   }
 }
 
+.langTool {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 365px) {
   .menuItem {
     font-size: 0.9rem;
