@@ -9,15 +9,9 @@ import Contact from '@sections/Contact';
 import Articles from '@sections/Articles';
 import LangSwitch from '@components/LangSwitch';
 import styles from '../styles/home.module.scss';
-import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next'
 
-const Home=()=> {
-  const { locale, locales, defaultLocale } = useRouter();
-  const { t } = useTranslation('common')
-  console.log(locale, locales, defaultLocale);
-  
+const Home = () => {
   return (
     <>
       <Head>
@@ -60,12 +54,12 @@ const Home=()=> {
       </div>
     </>
   );
-}
+};
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...await serverSideTranslations(locale, ['common']),
+    ...(await serverSideTranslations(locale, ['common'])),
   },
-})
+});
 
 export default Home;
