@@ -1,6 +1,6 @@
 import conversaIcon from '@assets/portfolio/conversa.png';
 import hidoIcon from '@assets/portfolio/hido.png';
-import stylishIcon from '@assets/portfolio/stylish.png';
+import stylishIcon from '@assets/portfolio/Stylish.png';
 
 export const projects = [
   {
