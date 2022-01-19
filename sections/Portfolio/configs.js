@@ -1,11 +1,12 @@
-import icon from '@assets/portfolio/conversa.png';
-import icon2 from '@assets/portfolio/hido.png';
+import conversaIcon from '@assets/portfolio/conversa.png';
+import hidoIcon from '@assets/portfolio/hido.png';
+import stylishIcon from '@assets/portfolio/Stylish.png';
 
 export const projects = [
   {
     title: 'conversa',
     description: 'conversaDescription',
-    imageSrc: icon,
+    imageSrc: conversaIcon,
     techTags: [
       'React',
       'Redux',
@@ -21,9 +22,17 @@ export const projects = [
   {
     title: 'hido',
     description: 'hidoDescription',
-    imageSrc: icon2,
+    imageSrc: hidoIcon,
     techTags: ['React', 'RWD', 'SPA', 'Gatsby', 'CSS module'],
     link: 'https://hido.tw/',
     githubLink: null,
+  },
+  {
+    title: 'stylish',
+    description: 'stylishDescription',
+    imageSrc: stylishIcon,
+    techTags: ['VanillaJS', 'RWD', 'infinite scroll', 'TapPay SDK'],
+    link: 'https://aislynyc.github.io/STYLiSH/',
+    githubLink: 'https://github.com/AislynYC/STYLiSH',
   },
 ];
