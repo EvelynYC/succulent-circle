@@ -4,6 +4,8 @@
   "conversaDescription": "Conversa is a Real-time Poll Tool & Slides Editor. With Conversa, you can interact with your audience and collect feedbacks with ease and fun. Conversa can also show an instant diagram with audience responses.",
   "hido": "Grandpa Tang's Pomelo Farm",
   "hidoDescription": "An one-page promotion site for a pomelo farm. With Gatsby to create static site without spending much time and have good SEO.",
+  "stylish": "STYLiSH",
+  "stylishDescription": "An e-commerce website for fashion products. Implement infinite scroll, shopping cart and picture slide effect with VanillaJS.",
   "emailContact": "Welcome to reach me via email:",
   "otherContact": "You can also find me at:",
   "inProgress": "= WIP =",
