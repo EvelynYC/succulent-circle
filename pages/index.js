@@ -15,15 +15,22 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Hi! I am Aslyn</title>
+        <title>Hi! I am Aslyn 我是語純</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
           content="I am Aslyn. I am a front-end web engineer. 我是莊語純，是一個網頁前端工程師。"
         />
-        <meta name="keywords" content="Aslyn,莊語純,Aislyn,語純" />
         <meta httpEquiv="Content-Language" content="en,zh-TW" />
         <meta charset="UTF-8" />
+        <meta property="og:url" content="https://aslynyc.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Hi! I am Aslyn 我是語純" />
+        <meta
+          property="og:description"
+          content="I am Aslyn. I am a front-end web engineer. 我是莊語純，是一個網頁前端工程師。"
+        />
+        <meta property="og:image" content="/public/favicon.ico" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-KZB880WLEF"
