@@ -30,7 +30,7 @@ const Home = () => {
           property="og:description"
           content="I am Aslyn. I am a front-end web engineer. 我是莊語純，是一個網頁前端工程師。"
         />
-        <meta property="og:image" content="/public/favicon.ico" />
+        <meta property="og:image" content="/assets/Logo.svg" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-KZB880WLEF"
