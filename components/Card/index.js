@@ -28,7 +28,7 @@ const Card = (props) => {
             <Image
               src={src}
               alt={alt}
-              layout="intrinsic"
+              layout="responsive"
               objectFit="cover"
               width={width}
               height={height}
