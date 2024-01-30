@@ -9,7 +9,7 @@ import cx from 'classnames';
 import { useTranslation } from 'next-i18next';
 
 const Portfolio = () => {
-  const {t} =useTranslation('common')
+  const { t } = useTranslation('common');
 
   return (
     <div className={styles.container} id="portfolio">
@@ -38,15 +38,19 @@ const Portfolio = () => {
             }}
             extra={
               <>
-                <a href={link} target="_blank" rel="noreferrer">
-                  <LinkIcon className={styles.icon} fill="#6897ba" />
-                </a>
-               {githubLink && <a href={githubLink} target="_blank" rel="noreferrer">
-                  <GithubIcon
-                    className={cx(styles.icon, styles.github)}
-                    fill="#f7dc97"
-                  />
-                </a>}
+                {link && (
+                  <a href={link} target="_blank" rel="noreferrer">
+                    <LinkIcon className={styles.icon} fill="#6897ba" />
+                  </a>
+                )}
+                {githubLink && (
+                  <a href={githubLink} target="_blank" rel="noreferrer">
+                    <GithubIcon
+                      className={cx(styles.icon, styles.github)}
+                      fill="#f7dc97"
+                    />
+                  </a>
+                )}
               </>
             }
             footer={

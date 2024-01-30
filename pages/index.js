@@ -19,16 +19,16 @@ const Home = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
-          content="I am Aslyn. I am a front-end web engineer. 我是莊語純，是一個網頁前端工程師。"
+          content="I am Aslyn. I am a software engineer. 我是莊語純，是一個軟體工程師。"
         />
         <meta httpEquiv="Content-Language" content="en,zh-TW" />
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta property="og:url" content="https://aslynyc.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Hi! I am Aslyn 我是語純" />
         <meta
           property="og:description"
-          content="I am Aslyn. I am a front-end web engineer. 我是莊語純，是一個網頁前端工程師。"
+          content="I am Aslyn. I am a software engineer. 我是莊語純，是一個軟體工程師。"
         />
         <meta property="og:image" content="/assets/Logo.svg" />
         <script

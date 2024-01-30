@@ -1,6 +1,7 @@
 import conversaIcon from '@assets/portfolio/conversa.png';
 import hidoIcon from '@assets/portfolio/hido.png';
 import stylishIcon from '@assets/portfolio/Stylish.png';
+import grithubIcon from '@assets/portfolio/grithub.png';
 
 export const projects = [
   {
@@ -20,6 +21,22 @@ export const projects = [
     githubLink: 'https://github.com/AislynYC/conversa',
   },
   {
+    title: 'grithub',
+    description: 'grithubDescription',
+    imageSrc: grithubIcon,
+    techTags: [
+      'React',
+      'Redux',
+      'RWD',
+      'Styled Component',
+      'Ant Design',
+      'React Query',
+      'Infinite scroll',
+    ],
+    link: null,
+    githubLink: null,
+  },
+  {
     title: 'hido',
     description: 'hidoDescription',
     imageSrc: hidoIcon,
@@ -32,7 +49,7 @@ export const projects = [
     description: 'stylishDescription',
     imageSrc: stylishIcon,
     techTags: ['VanillaJS', 'RWD', 'infinite scroll', 'TapPay SDK'],
-    link: 'https://aislynyc.github.io/STYLiSH/',
-    githubLink: 'https://github.com/AislynYC/STYLiSH',
+    link: null,
+    githubLink: null,
   },
 ];
