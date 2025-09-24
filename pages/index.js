@@ -15,20 +15,20 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Hi! I am Aslyn 我是語純</title>
+        <title>Hi! I am Evelyn 我是語純</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
-          content="I am Aslyn. I am a software engineer. 我是莊語純，是一個軟體工程師。"
+          content="I am Evelyn. I am a software engineer. 我是莊語純，是一位軟體工程師。"
         />
         <meta httpEquiv="Content-Language" content="en,zh-TW" />
         <meta charSet="UTF-8" />
         <meta property="og:url" content="https://aslynyc.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Hi! I am Aslyn 我是語純" />
+        <meta property="og:title" content="Hi! I am Evelyn 我是語純" />
         <meta
           property="og:description"
-          content="I am Aslyn. I am a software engineer. 我是莊語純，是一個軟體工程師。"
+          content="I am Evelyn. I am a software engineer. 我是莊語純，是一個軟體工程師。"
         />
         <meta property="og:image" content="/assets/Logo.svg" />
         <script
