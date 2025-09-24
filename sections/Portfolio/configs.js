@@ -18,7 +18,7 @@ export const projects = [
       'Material Design',
     ],
     link: 'https://conversa-a419b.firebaseapp.com',
-    githubLink: 'https://github.com/AislynYC/conversa',
+    githubLink: 'https://github.com/EvelynYC/conversa',
   },
   {
     title: 'grithub',

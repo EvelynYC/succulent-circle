@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import Header from '@components/Header';
 import Background from '@components/Background';
 import Footer from '@components/Footer';
@@ -6,7 +7,7 @@ import About from '@sections/About';
 import Skills from '@sections/Skills';
 import Portfolio from '@sections/Portfolio';
 import Contact from '@sections/Contact';
-import Articles from '@sections/Articles';
+// import Articles from '@sections/Articles';
 import LangSwitch from '@components/LangSwitch';
 import styles from '../styles/home.module.scss';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -31,19 +32,19 @@ const Home = () => {
           content="I am Evelyn. I am a software engineer. 我是莊語純，是一個軟體工程師。"
         />
         <meta property="og:image" content="/assets/Logo.svg" />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-KZB880WLEF"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: ` window.dataLayer = window.dataLayer || [];
-                      function gtag(){dataLayer.push(arguments);}
-                      gtag('js', new Date());
-                      gtag('config', 'G-KZB880WLEF');`,
-          }}
-        />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-KZB880WLEF"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KZB880WLEF');
+        `}
+      </Script>
       <div className={styles.container} id="home">
         <Background />
         <Header />
@@ -54,7 +55,7 @@ const Home = () => {
           <About />
           <Portfolio />
           <Skills />
-          <Articles />
+          {/* <Articles /> */}
           <Contact />
         </div>
         <Footer />

@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 $pieceMaxAmount: 12;
 
 .container {
@@ -11,14 +13,14 @@ $pieceMaxAmount: 12;
 }
 
 @mixin randomPositionSize($width) {
-  top: (random(70) + 10) * 1%;
-  left: random(80) * 1%;
+  top: (math.random(70) + 10) * 1%;
+  left: math.random(80) * 1%;
   width: $width + px;
   height: $width + px;
 }
 
 @for $i from 1 through $pieceMaxAmount + 1 {
-  $width: (random() * 2 + 1) * 40;
+  $width: (math.random() * 2 + 1) * 40;
   .piece:nth-child(#{$i}) {
     @include randomPositionSize($width);
   }
@@ -27,7 +29,7 @@ $pieceMaxAmount: 12;
 @media (min-width: 768px) {
   /* iPad */
   @for $i from 1 through $pieceMaxAmount + 1 {
-    $width: (random() * 2 + 1) * 40;
+    $width: (math.random() * 2 + 1) * 40;
     .piece:nth-child(#{$i}) {
       display: block;
       @include randomPositionSize($width);

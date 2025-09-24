@@ -5,7 +5,7 @@ const Footer = () => {
     <div className={styles.footer} id="footer">
       <div className={styles.content}>
         <div className={styles.copyRight}>
-          <p>{'© 2021 made with ❤ by Aislyn Y.C..'}</p>
+          <p>{'© 2021 made with ❤ by Evelyn Y.C..'}</p>
           <p>{' All rights reserved.'}</p>
           <p>
             {` Icon credit to `}

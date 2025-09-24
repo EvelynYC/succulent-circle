@@ -11,10 +11,10 @@ export const menuItems = [
     path: 'skills',
     label: 'Skills',
   },
-  {
-    path: 'articles',
-    label: 'Articles',
-  },
+  // {
+  //   path: 'articles',
+  //   label: 'Articles',
+  // },
   {
     path: 'contact',
     label: 'Contact',

@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import Logo from '@assets/Logo.svg';
 import styles from './index.module.scss';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { menuItems } from './configs';
 import cx from 'classnames';
 import MenuIcon from '../MenuIcon';
@@ -28,15 +27,28 @@ const Header = () => {
     });
   };
 
-  const handleScroll = (e) => {
-    let scrollTop = e.target.scrollingElement.scrollTop;
+  const scrollToSection = (sectionId, offset = 0) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const elementPosition = element.offsetTop;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const handleScroll = () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     setHasScrolled(scrollTop > 136);
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll, true);
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
-    return () => window.removeEventListener('scroll', handleScroll, true);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -52,15 +64,18 @@ const Header = () => {
       </div>
       <nav className={cx(styles.menu, isDynamicMenuShow && styles.fixedMenu)}>
         {menuItems.map(({ path, label }) => (
-          <AnchorLink
+          <a
             key={path}
             href={`#${path}`}
             className={styles.menuItem}
-            onClick={closeDynamicMenu}
-            offset={isDynamicMenuShow ? -195 : 0}
+            onClick={(e) => {
+              e.preventDefault();
+              closeDynamicMenu();
+              scrollToSection(path, isDynamicMenuShow ? 195 : 0);
+            }}
           >
             {label}
-          </AnchorLink>
+          </a>
         ))}
         {isDynamicMenuShow && (
           <div className={styles.langTool}>

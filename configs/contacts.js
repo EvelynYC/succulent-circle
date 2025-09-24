@@ -20,7 +20,7 @@ export const contacts = [
   {
     name: 'Github',
     getIcon: (fill) => <GithubIcon fill={fill} />,
-    link: 'https://github.com/AislynYC',
+    link: 'https://github.com/EvelynYC',
   },
   {
     name: 'Twitter',
